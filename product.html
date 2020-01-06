@@ -6,7 +6,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
     <!-- Bootstrap CSS -->
-    
+    <style>html {
+        position: relative;
+        min-height: 100%;
+      }
+      body {
+        /* Margin bottom by footer height */
+        margin-bottom: 30px;
+      }
+      .footer {
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+        /* Set the fixed height of the footer here */
+        height: 30px;
+      }</style>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <link rel="icon" href="images/favicon.ico" type="image/x-icon" />
     <title>田園小舖</title>
@@ -56,7 +70,7 @@
                       <img style="max-height: 150px" src="images/fr1.jpg" class="card-img-top" alt="...">
                       <div class="card-body">
                         <h5 class="card-title">草莓</h5>
-                                    
+                        <p style="color: red">$100</p>
                         <a href="#" class="btn btn-primary" data-toggle="modal" data-target="#m1">選購</a>
                       </div>
                     </div>
@@ -66,7 +80,7 @@
                       <img style="max-height: 150px" src="images/fr2.jpg" class="card-img-top" alt="...">
                       <div class="card-body">
                         <h5 class="card-title">橘子</h5>
-                                    
+                        <p style="color: red">$50</p>
                         <a href="#" class="btn btn-primary" data-toggle="modal" data-target="#m2">選購</a>
                       </div>
                     </div>
@@ -76,7 +90,7 @@
                       <img style="max-height: 150px" src="images/fr3.jpg" class="card-img-top" alt="...">
                       <div class="card-body">
                         <h5 class="card-title">蓮霧</h5>
-                                    
+                        <p style="color: red">$100</p>   
                         <a href="#" class="btn btn-primary" data-toggle="modal" data-target="#m3">選購</a>
                       </div>
                     </div>
@@ -90,7 +104,7 @@
                           <img style="max-height: 150px" src="images/veg1.jpg" class="card-img-top" alt="...">
                           <div class="card-body">
                             <h5 class="card-title">番茄</h5>
-                            
+                            <p style="color: red">$50</p>
                             <a href="#" class="btn btn-primary"data-toggle="modal" data-target="#m4">選購</a>
                           </div>
                     </div>
@@ -100,7 +114,7 @@
                           <img style="max-height: 150px" src="images/veg2.jpg" class="card-img-top" alt="...">
                           <div class="card-body">
                             <h5 class="card-title">綠花椰菜</h5>
-                            
+                            <p style="color: red">$60</p>
                             <a href="#" class="btn btn-primary" data-toggle="modal" data-target="#m5">選購</a>
                       </div>
                       </div>  
@@ -110,7 +124,7 @@
                       <img style="max-height: 150px" src="images/veg3.jpg" class="card-img-top" alt="...">
                       <div class="card-body">
                         <h5 class="card-title" data-toggle="modal" data-target="#m6">彩椒</h5>
-                        
+                        <p style="color: red">$80</p>
                         <a href="#" class="btn btn-primary" data-toggle="modal" data-target="#m6">選購</a>
                       </div>
                     </div>
@@ -120,7 +134,7 @@
                         <img style="max-height: 150px" src="images/veg4.jpg" class="card-img-top" alt="...">
                         <div class="card-body">
                           <h5 class="card-title" data-toggle="modal" data-target="#m7">南瓜</h5>
-                                  
+                          <p style="color: red">$100</p> 
                           <a href="#" class="btn btn-primary" data-toggle="modal" data-target="#m7">選購</a>
                         </div>
                       </div>
@@ -422,8 +436,13 @@
     </div>
   </div>
 </div>
+<footer class="footer navbar-fixed-bottom" style="background-color: black">
+    <div class="container" style="text-align: center;color:white">
+      Copyright &copy; NFU
+    </div>
+</footer>
     <footer class="footer mt-4" style="padding-bottom: 10px;background-color: black">
-        <br><p style="text-align: center;color:white">Copyright &copy; NFU</p>  
+        <p style="text-align: center;color:white">Copyright &copy; NFU</p>  
     </footer>
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
